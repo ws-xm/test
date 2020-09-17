@@ -1,0 +1,11 @@
+- debug:
+    msg: "hello {{testvar}} !"
+
+- template:
+    src: test.conf.j2
+    dest: /opt/test.conf
+
+- debug:
+    msg: "hello roles"
+  changed_when: true
+  notify: test_handler

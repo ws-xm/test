@@ -1,0 +1,3 @@
+- name: test_handler
+  debug:
+    msg: "this is a test handler"
